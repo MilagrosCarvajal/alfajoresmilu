@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root {
+    --cor-azul: #e1e8ed;
+    --cor-terracota: #d08c60;
+    --cor-verde: #93a99f;
+    --cor-cafe: #3d2c29;
+    --cor-ouro: #e1c699;
+    --cor-fundo: #ddcdb0;
+    --cor-logo: #c2d2cb;
+    --cor-coral: rgb(222, 124, 124);
+}
+
+main {
+    background-image: url(projeto-alfajores-milu/alfajor\ horizontal.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main div.conteudo-principal-flexivel {
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main div.conteudo-principal-flexivel h1 {
+    font-size: 2em;
+    color: var(--cor-ouro);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.514);
+}
+
+
+/*botoes*/
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.448);
+    background-color: var(--cor-terracota);
+}
+
+button a {
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-fundo);
+}
+
+.logo-midea-social {
+    width: 20px;
+}
+
+.div-botoes-alinhamento{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+    /*botoes*/
