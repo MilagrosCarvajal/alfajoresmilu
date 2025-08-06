@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+:root {
+    --cor-azul: #e1e8ed;
+    --cor-terracota: #d08c60;
+    --cor-verde: #93a99f;
+    --cor-cafe: #3d2c29;
+    --cor-ouro: #e1c699;
+    --cor-fundo: #ddcdb0;
+    --cor-logo: #c2d2cb;
+    --cor-coral: rgb(222, 124, 124);
+}
+
+main{
+    background-image: url(projeto-alfajores-milu/fundo-sobre-mim-2.png);
+    background-size: cover;
+    background-position:center;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.conteudo-principal-flexivel {
+    margin: 15px;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddcdb070;
+}
+
+h1{
+    font-size: 2.5em;
+    color: var(--cor-cafe);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.419);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p{
+    font-size: 1.4em;
+    color: var(--cor-cafe);
+    text-align: center;
+}

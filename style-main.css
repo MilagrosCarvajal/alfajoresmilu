@@ -27,14 +27,14 @@ main div.conteudo-principal-flexivel {
     align-items: center;
 }
 
-main div.conteudo-principal-flexivel h1 {
+main div.conteudo-principal-flexivel h1.h1-principal {
     font-size: 2em;
     color: var(--cor-ouro);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.514);
 }
 
   @media screen and (min-width: 700px) {
-            main div.conteudo-principal-flexivel h1 {
+            main div.conteudo-principal-flexivel h1.h1-principal {
                 font-size: 3em;
             }
         }
