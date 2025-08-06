@@ -33,6 +33,12 @@ main div.conteudo-principal-flexivel h1 {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.514);
 }
 
+  @media screen and (min-width: 700px) {
+            main div.conteudo-principal-flexivel h1 {
+                font-size: 3em;
+            }
+        }
+
 
 /*botoes*/
 .botoes {
