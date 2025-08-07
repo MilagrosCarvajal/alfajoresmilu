@@ -20,8 +20,6 @@
 }
 
 .conteiner {
-    width: 100vw;
-    height: 100vh;
     margin: auto;
     display: grid;
     grid-template: 300px 3fr 75px/ 1fr;
@@ -41,7 +39,6 @@ header {
 
 .logo-milu {
     width: 250px;
-
 }
 
 main {
@@ -52,19 +49,70 @@ main {
 .conteudo-principal-flexivel {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
-.imagem-alfajor {
+.img{
     width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
 }
+.sobrealfajores{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+.sabor{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
 
 .sobremim{
     background-image: url(projeto-alfajores-milu/fundo-sobre-mim-2.png);
     background-size: cover;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
     
 }
 
+.texto-sobre-mim {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.429);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
+}
+
+.venda{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 350px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
 a{
   text-decoration: none;
   color: var(--cor-terracota); 
@@ -89,16 +137,22 @@ button a {
     color: var(--cor-fundo);
 }
 
-.logo-midea-social {
+/*botoes*/
+
+.logo-midea {
     width: 20px;
 }
-
-.div-botoes-alinhamento {
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: ;
+}
+.alinhamento-media {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
 }
-/*botoes*/
 
 footer {
     grid-area: -2/1/-1/-1;
