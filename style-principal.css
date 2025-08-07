@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+    --cor-azul: #e1e8ed;
+    --cor-terracota: #d08c60;
+    --cor-verde: #93a99f;
+    --cor-cafe: #3d2c29;
+    --cor-ouro: #e1c699;
+    --cor-fundo: #f0e8db;
+    --cor-logo: #c2d2cb;
+    --cor-coral: rgb(222, 124, 124);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template: 300px 3fr 75px/ 1fr;
+}
+
+header {
+    grid-area: 1/1/2/-1;
+    background-image: url(projeto-alfajores-milu/fundo-header.jpeg);
+    background-size: cover;
+    background-position: right;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.logo-milu {
+    width: 250px;
+
+}
+
+main {
+    grid-area: 2/1/-2/-1;
+    background-color: var(--cor-fundo);
+
+}
+.conteudo-principal-flexivel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.imagem-alfajor {
+    width: 300px;
+}
+
+.sobremim{
+    background-image: url(projeto-alfajores-milu/fundo-sobre-mim-2.png);
+    background-size: cover;
+    
+}
+
+a{
+  text-decoration: none;
+  color: var(--cor-terracota); 
+}
+
+/*botoes*/
+
+button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.448);
+    background-color: #718e81;
+}
+
+button a {
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-fundo);
+}
+
+.logo-midea-social {
+    width: 20px;
+}
+
+.div-botoes-alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*botoes*/
+
+footer {
+    grid-area: -2/1/-1/-1;
+    background-color: var(--cor-verde);
+    padding: 5px;
+    text-align: center;
+    color: var(--cor-cafe);
+}
