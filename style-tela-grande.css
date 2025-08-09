@@ -100,7 +100,7 @@
         /* largura da viewport para mostrar 1 por vez */
         scroll-snap-align: start;
         box-sizing: border-box;
-        padding: 29px;
+        padding: 27px;
         /* ajuste se precisar */
         margin: 0;
     }

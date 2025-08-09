@@ -119,9 +119,15 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-        align-items: left;
+        align-items: center;
+        text-align: center;
     }
 
+    li{
+        list-style: none;
+        font-size: 1.2em;
+        margin: 5px;
+    }
 
     .sobremim {
         background-image: url(projeto-alfajores-milu/fundo-sobre-mim.png);
