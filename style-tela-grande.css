@@ -165,14 +165,6 @@
         right: 10px;
     }
 
-    @media  and (max-height: 500px) {
-        #prevBtn,
-        #nextBtn {
-            top: 80%;
-        }
-        
-    }
-
 
     .img {
         width: 300px;
@@ -304,4 +296,15 @@
         color: var(--cor-cafe);
     }
 
+}
+
+
+@media screen and (max-height: 650px) and (min-height:100px) {
+    #prevBtn,
+    #nextBtn {
+        position: absolute;
+        top: 110%;
+        transform: translateY(-50%);
+    
+}
 }
