@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="projeto-alfajores-milu/favicon/favicon.ico" type="image/x-icon">
     <title>Alfajores Milu</title>
-    <link rel="stylesheet" href="style-principal.css" >
-    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-tela-celular.css">
+    <link rel="stylesheet" href="style-tela-grande.css">
 
 </head>
 
@@ -15,83 +15,130 @@
     <div class="conteiner">
         <header>
             <img src="projeto-alfajores-milu/logo-alfajores-milu-completo-semfundo2.png" alt="logo" class="logo-milu">
-            <button class="div-botoes-alinhamento">
-                <a href="https://wa.link/ocmwws" target="_blank">FAÇA SUA ENCOMENDA</a>
-            </button>
+            <a href="https://wa.link/ocmwws" target="_blank" class="button">FAÇA SUA ENCOMENDA</a>
+
         </header>
         <main>
-            <div class="conteudo-principal-flexivel">
-                <div class="sobrealfajores">
-                    <h1 class="h1-principal">Sobre os Alfajores</h1>
-                    <p class="paragrafo-principal">O alfajor é um doce tradicional argentino feito com duas camadas de
-                        massa
-                        macia, recheado com doce de leite e coberto com chocolate. Cada alfajor Milu é artesanal, feito
-                        com
-                        carinho, tradição e ingredientes selecionados.
-                        Experimente um sabor que atravessa fronteiras — direto da Argentina para o seu paladar.</p>
-                    <img src="projeto-alfajores-milu/alfajor quadrado.png" alt="alfajor" class="img">
-                </div>
-
-                <div class="sabor">
-                    <h1>Sabor</h1>
-                    <ul>
-                        <li><strong>CLÁSSICO|Doce de leite com cobertura de chocolate meio-amargo|</strong></li>
-                        <li>Embalado individualmete</li>
-                        <li>Pacotes de 6 ou 12 unidades</li>
-                        <li>Ideal para presentes, cafes, empresas e lembrancinhas.</li>
-                    </ul>
-                    <img src="projeto-alfajores-milu/caixaalfajores.png" alt="caixaalfajores" class="img">
-                </div>
-
-                <div class="sobremim">
-                    <div class="texto-sobre-mim">
-                        <h1>Sobre a Milu</h1>
-                        <p>Eu sou a Milu — argentina de coração, morando em Niterói e apaixonada por alfajores desde sempre.
-                            Trago um pedacinho da minha terra natal em cada alfajor, feito com ingredientes de qualidade,
-                            recheio generoso de doce de leite e aquele toque caseiro que aquece o coração.
-                            Aqui não tem produção em massa: cada unidade é feita com carinho, para você se sentir especial a
-                            cada mordida.</p>
+            <div class="carrossel-conteiner">
+                <button id="prevBtn" aria-label="Anterior">◀</button>
+                <div class="conteudo-principal-flexivel">
+                    <div class="sobrealfajores reveal">
+                        <div class="texto-sobre-alfajores">
+                            <h1 class="h1-principal">Sobre os Alfajores</h1>
+                            <p class="paragrafo-principal">O alfajor é um doce tradicional argentino feito com duas camadas
+                                de
+                                massa
+                                macia, recheado com doce de leite e coberto com chocolate. Cada alfajor Milu é artesanal,
+                                feito
+                                com
+                                carinho, tradição e ingredientes selecionados.
+                                Experimente um sabor que atravessa fronteiras — direto da Argentina para o seu paladar.</p>
+                        </div>
+                        <img src="projeto-alfajores-milu/alfajor quadrado.png" alt="alfajor" class="img">
+                    </div>
+                    <div class="sabor reveal">
+                        <div class="texto-sabor">
+                            <h1>Sabor</h1>
+                            <ul>
+                                <li><strong>CLÁSSICO|Doce de leite com cobertura de chocolate meio-amargo|</strong></li>
+                                <li>Embalado individualmete</li>
+                                <li>Pacotes de 6 ou 12 unidades</li>
+                                <li>Ideal para presentes, cafes, empresas e lembrancinhas.</li>
+                            </ul>
+                        </div>
+                        <img src="projeto-alfajores-milu/alfajor-embalado-400.png" alt="caixaalfajores" class="img">
+                    </div>
+                    <div class="sobremim">
+                        <div class="texto-sobre-mim reveal">
+                            <h1>Sobre a Milu</h1>
+                            <p>Eu sou a Milu — argentina de coração, morando em Niterói e apaixonada por alfajores desde
+                                sempre.
+                                Trago um pedacinho da minha terra natal em cada alfajor, feito com ingredientes de
+                                qualidade,
+                                recheio generoso de doce de leite e aquele toque caseiro que aquece o coração.
+                                Aqui não tem produção em massa: cada unidade é feita com carinho, para você se sentir
+                                especial a
+                                cada mordida.</p>
+                        </div>
+                        <div class="espaco-sobremim"></div>
+                    </div>
+                    <div class="venda reveal">
+                        <div class="texto-venda">
+                            <h1>Entregas e vendas</h1>
+                            <p>
+                                Entregamos em Niterói através de pedidos diretos ou durante as corridas por aplicativo com
+                                meu
+                                marido, que leva nossos doces por toda a cidade.<br>
+                                <strong>Quer garantir o seu? É só chamar no WhatsApp!</strong>
+                            </p>
+                            <a href="https://wa.link/ocmwws" target="_blank" class="button">FAÇA SUA ENCOMENDA</a>
+                        </div>
+                        <img src="projeto-alfajores-milu/imagem-motorista.png" alt="entrega" class="img">
+                    </div>
+                    <div class="contato reveal">
+                        <h1>Redes Socias e contato</h1>
+                        <div class="alinhamento-media">
+                            <img src="projeto-alfajores-milu/logowpp.png" alt="logo whatsapp" class="logo-midea">
+                            <p> WhatsApp: <a href="https://wa.link/ocmwws">clique aqui</a></p>
+                        </div>
+                        <div class="alinhamento-media">
+                            <img src="projeto-alfajores-milu/logoinsta.png" alt="logo insta" class="logo-midea">
+                            <p> Instagram: <a
+                                    href="https://www.instagram.com/alfajoresmilu?igsh=MWh3djQ5NTFlaTds&utm_source=qr">@alfajoresmilu</a>
+                            </p>
+                        </div>
+                        <p>📍 Niterói – RJ</p>
                     </div>
                 </div>
-
-                <div class="venda">
-                        <h1>Entregas e vendas</h1>
-                        <p>
-                            Entregamos em Niterói através de pedidos diretos ou durante as corridas por aplicativo com meu
-                            marido, que leva nossos doces por toda a cidade.<br>
-                            <strong>Quer garantir o seu? É só chamar no WhatsApp!</strong>
-                        </p>
-                        <button class="div-botoes-alinhamento">
-                        <a href="https://wa.link/ocmwws" target="_blank">FAÇA SUA ENCOMENDA</a>
-                    </button>                
-                    <img src="projeto-alfajores-milu/imagem-motorista.png" alt="entrega" class="img">
-
-                </div>
-                <div class="contato">
-
-                    <h1>Redes Socias e contato</h1>
-                    <div class="alinhamento-media">
-                        <img src="projeto-alfajores-milu/logowpp.png" alt="logo whatsapp" class="logo-midea">
-                        <p> WhatsApp: <a href="https://wa.link/ocmwws">clique aqui</a></p>
-                    </div>
-
-                    <div class="alinhamento-media">
-                        <img src="projeto-alfajores-milu/logoinsta.png" alt="logo insta" class="logo-midea">
-                        <p> Instagram: <a href="https://www.instagram.com/alfajoresmilu?igsh=MWh3djQ5NTFlaTds&utm_source=qr">@alfajoresmilu</a></p>
-                    </div>
-
-                    <p>📍 Niterói – RJ</p>
-                    
-
-                </div>
+                <button id="nextBtn" aria-label="Próximo">▶</button>
             </div>
         </main>
         <footer>
             <p>© Produzido artesanalmente em Niterói, RJ</p>
-<p>🌐 Site desenvolvido por Milagros Carvajal</p>
+            <p>🌐 Site desenvolvido por Milagros Carvajal</p>
             <p>🌱 Feito com amor e doce de leite</p>
         </footer>
     </div>
+
+    <script>
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 100;
+                if (elementTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // para já ativar no carregamento
+
+
+        const container = document.querySelector('.conteudo-principal-flexivel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        const scrollAmount = window.innerWidth; // largura da viewport
+
+        prevBtn.addEventListener('click', () => {
+            container.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

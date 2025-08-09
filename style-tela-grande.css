@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+:root {
+    --cor-azul: #e1e8ed;
+    --cor-terracota: #d08c60;
+    --cor-verde: #93a99f;
+    --cor-cafe: #3d2c29;
+    --cor-ouro: #e1c699;
+    --cor-fundo: #f0e8db;
+    --cor-logo: #c2d2cb;
+    --cor-coral: rgb(222, 124, 124);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media screen and (min-width: 650px) {
+
+    .conteiner {
+        margin: auto;
+        display: grid;
+        grid-template: 300px 3fr 75px/ 1fr;
+    }
+
+    header {
+        grid-area: 1/1/2/-1;
+        background-image: url(projeto-alfajores-milu/fundo-header.jpeg);
+        background-size: cover;
+        background-position: right;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-milu {
+        width: 250px;
+    }
+
+    .button {
+        width: 250px;
+        text-align: center;
+        background-color: #718e81;
+        text-decoration: none;
+        color: var(--cor-fundo);
+        padding: 15px;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    .button:hover {
+        background-color: var(--cor-cafe);
+        color: var(--cor-ouro);
+        transform: scale(1.01);
+    }
+
+    main {
+        grid-area: 2/1/-2/-1;
+        background-color: #c2d2cb;
+    }
+
+    .conteudo-principal-flexivel {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        /* largura total da viewport */
+        overflow-x: auto;
+        /* ativa rolagem horizontal */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin: auto;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.448);
+        background-color: var(--cor-fundo);
+        /* pode ajustar para tirar espaço extra */
+        scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
+    }
+
+    .conteudo-principal-flexivel>div {
+        flex: 0 0 100vw;
+        /* largura da viewport para mostrar 1 por vez */
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 29px;
+        /* ajuste se precisar */
+        margin: 0;
+    }
+
+    @media screen and (min-width:1500px) {
+        .conteudo-principal-flexivel>div {
+            flex: 0 0 50vw;
+            /* largura da viewport para mostrar 1 por vez */
+            scroll-snap-align: start;
+            box-sizing: border-box;
+            padding: 27px;
+            /* ajuste se precisar */
+            margin: 0;
+        }
+        
+    }
+
+    .conteudo-principal-flexivel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+    .carrossel-container {
+        position: relative;
+        max-width: 100vw;
+        margin: auto;
+    }
+
+    #prevBtn,
+    #nextBtn {
+        position: absolute;
+        top: 68%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 2rem;
+        background-color: rgba(61, 44, 41, 0.7);
+        /* cor café com transparência */
+        color: var(--cor-ouro);
+        border: none;
+        border-radius: 50%;
+        user-select: none;
+        transition: background-color 0.3s ease;
+        z-index: 10;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #prevBtn:hover,
+    #nextBtn:hover {
+        background-color: var(--cor-ouro);
+        color: var(--cor-cafe);
+    }
+
+    #prevBtn {
+        left: 10px;
+    }
+
+    #nextBtn {
+        right: 10px;
+    }
+
+
+
+    .img {
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
+    }
+
+    .sobrealfajores {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .texto-sobre-alfajores {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+    }
+
+    .sabor {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .texto-sabor {
+        width: 250px;
+        font-size: 1.2em;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .sobremim {
+        background-image: url(projeto-alfajores-milu/fundo-sobre-mim-2.png);
+        background-size: cover;
+        background-position: right;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .texto-sobre-mim {
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.429);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
+    }
+
+    .espaco-sobremim {
+        width: 250px;
+    }
+
+    .venda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .texto-venda {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 300px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    .contato a {
+        text-decoration: none;
+        color: var(--cor-terracota);
+    }
+
+    .contato a:hover {
+        color: var(--cor-cafe);
+        transition: 0.5s;
+    }
+
+    .logo-midea {
+        width: 20px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .alinhamento-media {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer {
+        grid-area: -2/1/-1/-1;
+        background-color: var(--cor-verde);
+        padding: 5px;
+        text-align: center;
+        color: var(--cor-cafe);
+    }
+
+}
