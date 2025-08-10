@@ -126,33 +126,61 @@ arrow_back_ios
                 }
             });
         }
-
+        
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll(); // para já ativar no carregamento
 
 
         const container = document.querySelector('.conteudo-principal-flexivel');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
+    const items = document.querySelectorAll('.conteudo-principal-flexivel > div');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-        const scrollAmount = window.innerWidth; // largura da viewport
+    let index = 0;
+    const total = items.length;
+    let autoScrollInterval;
 
-        prevBtn.addEventListener('click', () => {
-            container.scrollBy({
-                left: -scrollAmount,
-                behavior: 'smooth'
-            });
+    function scrollToIndex(i) {
+        const itemWidth = container.clientWidth; // pega a largura visível
+        container.scrollTo({
+            left: i * itemWidth,
+            behavior: "smooth"
         });
+    }
 
-        nextBtn.addEventListener('click', () => {
-            container.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        });
+    function next() {
+        index = (index + 1) % total; // volta para o início
+        scrollToIndex(index);
+    }
 
-    </script>
+    function prev() {
+        index = (index - 1 + total) % total; // volta para o último
+        scrollToIndex(index);
+    }
 
+    // Botões
+    nextBtn.addEventListener("click", () => {
+        next();
+        resetAutoScroll();
+    });
+
+    prevBtn.addEventListener("click", () => {
+        prev();
+        resetAutoScroll();
+    });
+
+    // Rolagem automática
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(next, 3000); // troca a cada 3s
+    }
+
+    function resetAutoScroll() {
+        clearInterval(autoScrollInterval);
+        startAutoScroll();
+    }
+
+    startAutoScroll();
+</script>
 </body>
 
 </html>

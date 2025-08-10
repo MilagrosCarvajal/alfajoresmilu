@@ -303,10 +303,20 @@
     #prevBtn,
     #nextBtn {
         position: absolute;
-        top: 150%;
+        top: 160%;
         transform: translateY(-50%);
     
 }
+.conteudo-principal-flexivel>div {
+            flex: 0 0 100vw;
+            /* largura da viewport para mostrar 1 por vez */
+            scroll-snap-align: start;
+            box-sizing: border-box;
+            padding: 27px;
+            /* ajuste se precisar */
+            margin: 0;
+        }
+        
 
 footer{
     font-size: 0.8em;
