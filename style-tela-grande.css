@@ -303,7 +303,7 @@
     #prevBtn,
     #nextBtn {
         position: absolute;
-        top: 160%;
+        top: 140%;
         transform: translateY(-50%);
     
 }
